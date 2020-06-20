@@ -45,7 +45,7 @@ class TagerSentryApi
             throw new TagerSentryApiConfigException('Project is not set (tager-sentry.project)');
         }
 
-        $project = $this->httpSentryRequest('https://sentry.io/api/0/organizations/' . $this->organization . '/' . $this->project . '/');
+        $project = $this->httpSentryRequest('https://sentry.io/api/0/projects/' . $this->organization . '/' . $this->project . '/');
         if (!$project) {
             throw new TagerSentryApiConfigException('Project "' . $this->project . '" is not found');
         }
