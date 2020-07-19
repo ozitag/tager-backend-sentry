@@ -2,9 +2,9 @@
 
 namespace OZiTAG\Tager\Backend\Sentry;
 
-use Illuminate\Foundation\Support\Providers\RouteServiceProvider;
+use Illuminate\Support\ServiceProvider;
 
-class TagerBackendSentryServiceProvider extends RouteServiceProvider
+class TagerBackendSentryServiceProvider extends ServiceProvider
 {
 
     /**
@@ -29,7 +29,5 @@ class TagerBackendSentryServiceProvider extends RouteServiceProvider
         $this->publishes([
             __DIR__ . '/../config.php' => config_path('tager-sentry.php'),
         ]);
-
-        parent::boot();
     }
 }
