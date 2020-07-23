@@ -2,13 +2,11 @@
 
 namespace OZiTAG\Tager\Backend\Sentry\Features;
 
-use Illuminate\Http\Resources\Json\JsonResource;
-use OZiTAG\Tager\Backend\Core\Feature;
+use OZiTAG\Tager\Backend\Core\Features\Feature;
 use OZiTAG\Tager\Backend\Sentry\Resources\IssueResource;
 use OZiTAG\Tager\Backend\Sentry\Exceptions\TagerSentryApiAuthorizationException;
 use OZiTAG\Tager\Backend\Sentry\Exceptions\TagerSentryApiConfigException;
 use OZiTAG\Tager\Backend\Sentry\Api\TagerSentryApi;
-
 
 class ViewIssueFeature extends Feature
 {

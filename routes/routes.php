@@ -1,5 +1,6 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use OZiTAG\Tager\Backend\Sentry\Controllers\SentryController;
 
-Route::get('/tager/sentry-issue/{issue}',\OZiTAG\Tager\Backend\Sentry\Controllers\SentryController::class . '@issue');
+Route::get('/tager/sentry-issue/{issue}',[SentryController::class, 'issue']);

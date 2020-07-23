@@ -3,7 +3,6 @@
 namespace OZiTAG\Tager\Backend\Sentry\Resources;
 
 use Illuminate\Http\Resources\Json\JsonResource;
-use Ozerich\FileStorage\Models\File;
 use OZiTAG\Tager\Backend\Sentry\Api\TagerSentryStackTraceItem;
 
 class IssueResource extends JsonResource

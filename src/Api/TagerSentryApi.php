@@ -2,10 +2,8 @@
 
 namespace OZiTAG\Tager\Backend\Sentry\Api;
 
-use Illuminate\Support\ServiceProvider;
 use OZiTAG\Tager\Backend\Sentry\Exceptions\TagerSentryApiAuthorizationException;
 use OZiTAG\Tager\Backend\Sentry\Exceptions\TagerSentryApiConfigException;
-use OZiTAG\Tager\Backend\Seo\Commands\FlushSeoPagesCommand;
 
 class TagerSentryApi
 {
