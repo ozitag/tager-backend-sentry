@@ -4,7 +4,7 @@ namespace OZiTAG\Tager\Backend\Sentry;
 
 use Illuminate\Support\ServiceProvider;
 
-class TagerBackendSentryServiceProvider extends ServiceProvider
+class SentryServiceProvider extends ServiceProvider
 {
 
     /**
